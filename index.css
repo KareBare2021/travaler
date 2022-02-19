@@ -47,5 +47,31 @@ select {
     }
 }
 
+/* -------------------- */
+/*       utility classes */   
+/* -------------------- */ 
 
+.flex {
+    display: flex;gap: var(--gap, 1rem);
+}
 
+.grid {
+    display: grid;gap: var(--gap, 1rem);
+}
+
+.continer {
+    padding-inline: 2rem;
+    margin-inline: 0 auto;
+    max-width: 80rem;
+}
+/* for screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;}
